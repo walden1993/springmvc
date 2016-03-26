@@ -23,6 +23,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    hello spring mvc
+    hello spring mvc ${age}
   </body>
 </html>
