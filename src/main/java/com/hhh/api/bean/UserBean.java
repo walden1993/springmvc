@@ -11,6 +11,9 @@ package com.hhh.api.bean;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.hibernate.validator.constraints.Range;
 
+import com.hhh.api.sign.imp.Md5SignValidation;
+import com.hhh.api.validation.Sign;
+
 /**
  * ClassName:UserBean <br/>
  * Function: TODO ADD FUNCTION. <br/>
@@ -21,7 +24,7 @@ import org.hibernate.validator.constraints.Range;
  * @since    JDK 1.6
  * @see 	 
  */
-public class UserBean {
+public class UserBean extends Md5Bean {
 	
 	@NotEmpty(message="姓名不能为空")
 	private String name;

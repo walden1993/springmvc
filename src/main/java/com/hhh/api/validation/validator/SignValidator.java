@@ -12,7 +12,7 @@ import com.hhh.api.sign.imp.DefaultSignValidation;
 import com.hhh.api.validation.Sign;
 
 /**
- * 等于长度注解验证器
+ * 等于验签注解验证器
  *
  * @author he
  * @since 1.0.0

@@ -9,6 +9,9 @@
 
 package com.hhh.api.sign.imp;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.hhh.api.bean.SignBean;
 import com.hhh.api.sign.SignValidation;
 
@@ -19,11 +22,14 @@ import com.hhh.api.sign.SignValidation;
  * @since 1.0.0
  */
 public class DefaultSignValidation implements SignValidation {
+	static Logger logger = LoggerFactory.getLogger(DefaultSignValidation.class);
+	
 	@Override
 	public boolean validation(SignBean signBean) {
 		
 		//todo
+		logger.info("--------------"+DefaultSignValidation.class.getName());
 		
-		return false;
+		return true;
 	}
 }

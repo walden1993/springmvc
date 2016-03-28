@@ -8,11 +8,7 @@
 */
 
 package com.hhh.api.bean;
-
 import org.hibernate.validator.constraints.NotEmpty;
-
-import com.hhh.api.sign.imp.DefaultSignValidation;
-import com.hhh.api.validation.Sign;
 
 /**
  * 签名对象
@@ -20,7 +16,6 @@ import com.hhh.api.validation.Sign;
  * @author he
  * @since 1.0.0
  */
-@Sign(message="验签失败",value = DefaultSignValidation.class)
 public class SignBean {
 	@NotEmpty
 	public String sign;
